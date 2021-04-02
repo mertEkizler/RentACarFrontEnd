@@ -8,9 +8,15 @@
         </tr>
     </thead>
     <tr *ngFor="let car of cars">
-        <td>{{car.name}}</td>
+        <td>{{car.carName}}</td>
         <td>{{car.modelYear}}</td>
         <td>{{car.dailyPrice}}</td>
         <td>{{car.description}}</td>
     </tr>
 </table>
+
+<!-- <ul class="list-group">
+    <li (click)="setCurrentCar(car)" *ngFor="let car of cars"
+    class="list-group-item active">{{car.carName}}</li>
+</ul>
+<h5 *ngIf="currentCar">{{currentCar.carName}} seçtiniz</h5> -->

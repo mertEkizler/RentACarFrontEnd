@@ -1,0 +1,11 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Image Path</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let carimage of carImages">
+        <img class="rounded float-start" src="http://localhost:55629{{ carimage.imagePath }}"
+        class="d-block w-70" height="70" />
+    </tr>
+</table>

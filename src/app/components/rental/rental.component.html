@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
     <thead>
         <tr>
             <th>Rent Date</th>
@@ -9,4 +9,12 @@
         <td>{{rental.rentDate}}</td>
         <td>{{rental.returnDate}}</td>
     </tr>
-</table>
+</table> -->
+
+<ul class="list-group">
+    <li *ngFor="let rental of rentals" class="list-group-item">
+        {{rental.rentDate}}
+        <hr/>
+        {{rental.returnDate}}
+    </li>
+</ul>

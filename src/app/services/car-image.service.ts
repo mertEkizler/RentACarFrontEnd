@@ -9,10 +9,12 @@ import { ListResponseModel } from '../models/listResponseModel';
 })
 export class CarImageService {
 
-  apiUrl="http://localhost:55629/api/carImages/getall"
+  apiUrl="http://localhost:55629/api/carImages/getimagesbycarid?carid="
   constructor(private httpClient:HttpClient) { }
 
-  getCarImages():Observable<ListResponseModel<CarImage>>{
-    return this.httpClient.get<ListResponseModel<CarImage>>(this.apiUrl)
+  getImagesByCarId(carId:number):Observable<ListResponseModel<CarImage>>{
+    let newPath = this.apiUrl + carId
+    return this.httpClient.get<ListResponseModel<CarImage>>(newPath)
+
   }
 }
