@@ -1,7 +1,10 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Car } from 'src/app/models/car';
 import { CarService } from 'src/app/services/car.service';
+import { RentService } from 'src/app/services/rent.service';
 
 @Component({
   selector: 'app-car',
@@ -13,7 +16,7 @@ export class CarComponent implements OnInit {
   currentCar:Car
   filterText="";
   constructor(private carService:CarService, 
-    private activatedRoute:ActivatedRoute) {}
+    private activatedRoute:ActivatedRoute, private toastrService:ToastrService,private rentService:RentService) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params=>{
@@ -44,6 +47,11 @@ export class CarComponent implements OnInit {
     this.carService.getCarsByColor(id).subscribe(response=>{
       this.cars = response.data
     })    
+  }
+
+  rentACar(car:Car){
+    this.toastrService.success("rented", car.carName)
+    this.rentService.rentACar(car);
   }
 
 }

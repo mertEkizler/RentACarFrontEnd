@@ -15,15 +15,20 @@
             <th>Daily Price</th>
             <th>Price with VAT</th>
             <th>Car Description</th>
+            <th></th>
         </tr>
     </thead>
-    <tr *ngFor="let car of cars | filterPipe:filterText">
-        <td>{{car.carName |uppercase}}</td>
-        <td>{{car.modelYear }}</td>
-        <td>{{car.dailyPrice |currency: "TRY":"₺":""}}</td>
-        <td>{{car.dailyPrice |vatAdded:18 |currency: "TRY":"₺":""}}</td>
-        <td>{{car.description}}</td>
-    </tr>
+    <tbody>
+        <tr *ngFor="let car of cars | filterPipe:filterText">
+            <td>{{car.carName |uppercase}}</td>
+            <td>{{car.modelYear }}</td>
+            <td>{{car.dailyPrice |currency: "TRY":"₺":""}}</td>
+            <td>{{car.dailyPrice |vatAdded:18 |currency: "TRY":"₺":""}}</td>
+            <td>{{car.description}}</td>
+            <td><button (click)="rentACar(car)" class="btn btn-success">Rent</button></td>
+        </tr>
+    </tbody>
+    
 </table>
 
 <!-- <ul class="list-group">
