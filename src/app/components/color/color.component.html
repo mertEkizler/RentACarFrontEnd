@@ -8,7 +8,7 @@
         <td>{{color.colorName}}</td>
     </tr>
 </table> -->
-<h5>Renkler</h5>
+<h5>Colors</h5>
 <ul class="list-group">
     <li (click)="setCurrentColor(color)" *ngFor="let color of colors"
     routerLink="/cars/color/{{color.id}}"
@@ -17,4 +17,4 @@
     </li>
 </ul>
 
-<h5 *ngIf="currentColor">{{currentColor.colorName}} seçtiniz</h5>
+<h5 *ngIf="currentColor">{{currentColor.colorName}} you chose</h5>
