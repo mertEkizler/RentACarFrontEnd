@@ -8,8 +8,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * CRUD Operasyonlar
 * Add, Ekleme
 * Read, Okuma
-* Update, Güncelleme
-* Delete, Silme
 * Filtreleme
 * String veri ile Id ile çoklu filtreleme
 * Auth
