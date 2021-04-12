@@ -1,6 +1,32 @@
-# Rentacar
+# RentACar-Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+
+## Project Content
+
+* Projenin İçeriği
+* CRUD Operasyonlar
+* Add, Ekleme
+* Read, Okuma
+* Update, Güncelleme
+* Delete, Silme
+* Filtreleme
+* String veri ile Id ile çoklu filtreleme
+* Auth
+* Login
+* Register
+* Profile Update
+* Reactive Forms
+* Validasyon işlemleri
+* Toastr
+* Componentler arası veri Transfer, Child to Parent Data Binding
+* Locale Storage kontrolü
+* Models
+* Services
+* Custom pipes
+* Interceptor
+* Bootsrat v5 Beta 2
+
 
 ## Development server
 
@@ -25,3 +51,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Autor 
+### Mert Ekizler
+[LinkedIn](https://www.linkedin.com/in/mert-ekizler-93a905200/) -
+[Github](https://github.com/mertEkizler) -
+[E-Mail](mailto:mertekizler@hotmail.com)
+
+# And Thank You For Everything 
+
+[Engin Demiroğ](https://www.linkedin.com/in/engindemirog/)
